@@ -9,8 +9,8 @@ class Formulaire
     }
     public function ajouterzonetexte($nom)
     {
-       echo "Votre".$nom.": <input type=\"text\" id=$nom name=\"user_\".$nom >";
-       echo "\n";
+       echo "Votre ".$nom.": <input type=\"text\" id=$nom name=\"user_\".$nom >";
+       echo "\r";
     }
     public function ajouterbouton()
     {
