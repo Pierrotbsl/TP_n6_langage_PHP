@@ -3,30 +3,36 @@
 
 class Formulaire
 {
-    public function __construct($_nom, $methode)
+    public function __construct($_nomfichier, $_methode)
     {
-        echo "<form action=\"\" method=$methode></form>";
+        echo "<form action=\"$_nomfichier\" method=\"$_methode\"></form>";
     }
-    public function ajouterzonetexte($nom)
+    public function ajouterzonetexte($_nom)
     {
-       echo "Votre ".$nom.": <input type=\"text\" id=$nom name=\"user_\".$nom >";
-       echo "\r";
+        echo "<div>";
+        echo "Votre ".$_nom.": <input type=\"text\" id=$_nom name=\"user_\".$_nom>";
+        echo "\n";
+        echo "</div>";
+
     }
     public function ajouterbouton()
     {
+        echo "<div>";
         echo "<input type=\"submit\" name=\"valider\" value=\"Valider\"/>";
+        echo "</div>";
+
     }
     public function getform()
     {
+        echo "<div>";
+        echo "code HTML : \n";
         $page = file_get_contents("TestFormulaire.php");
-        echo '<pre>';
-        echo $page;
-        echo '</pre>';
+        print_r($page);
+        echo "</div>";
     }
 }
 
-
-$form = new Formulaire("Formulaire",post);
+$form = new Formulaire();
 $form->ajouterzonetexte(nom);
 $form->ajouterzonetexte(code);
 $form->ajouterbouton();
