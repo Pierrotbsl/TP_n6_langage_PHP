@@ -10,7 +10,7 @@ class Formulaire
     public function ajouterzonetexte($_nom)
     {
         echo "<div>";
-        echo "Votre ".$_nom.": <input type=\"text\" id=$_nom name=\"user_\".$_nom>";
+        echo "Votre ".$_nom.": <input type=\"text\" id=$_nom name=\"user_\".$_nom><br>";
         echo "\n";
         echo "</div>";
 
@@ -18,14 +18,14 @@ class Formulaire
     public function ajouterbouton()
     {
         echo "<div>";
-        echo "<input type=\"submit\" name=\"valider\" value=\"Valider\"/>";
+        echo "<input type=\"submit\" name=\"valider\" value=\"Valider\"/><br>";
         echo "</div>";
 
     }
     public function getform()
     {
         echo "<div>";
-        echo "code HTML : \n";
+        echo "code HTML : <br>";
         $page = file_get_contents("TestFormulaire.php");
         print_r($page);
         echo "</div>";
