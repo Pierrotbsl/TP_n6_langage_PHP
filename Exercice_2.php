@@ -1,7 +1,7 @@
 <?php
 
 
-class Formulaire
+class Exercice_2
 {
     public function __construct($_nomfichier, $_methode)
     {
@@ -26,14 +26,11 @@ class Formulaire
     {
         echo "<div>";
         echo "code HTML : <br>";
-        $page = file_get_contents("TestFormulaire.php");
+        $page = file_get_contents("Formulaire_Exercice_2.php");
         print_r($page);
         echo "</div>";
     }
+
 }
 
-$form = new Formulaire();
-$form->ajouterzonetexte(nom);
-$form->ajouterzonetexte(code);
-$form->ajouterbouton();
-$form->getform();
+?>
