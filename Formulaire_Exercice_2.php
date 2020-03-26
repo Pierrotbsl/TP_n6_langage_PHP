@@ -1,9 +1,6 @@
-<h1>Voici la page Test du Formulaire</h1>
+<?php include("Exercice_2.php");
 
-<?php include("Formulaire_Exercice_2.php");
-
-
-$form = new Exercice_2();
+$form = new Exercice_2('Exercice_2.php','post');
 $form->ajouterzonetexte(nom);
 $form->ajouterzonetexte(code);
 $form->ajouterbouton();

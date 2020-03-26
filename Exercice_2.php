@@ -1,6 +1,5 @@
 <?php
 
-
 class Exercice_2
 {
     public function __construct($_nomfichier, $_methode)
@@ -12,25 +11,24 @@ class Exercice_2
         echo "<div>";
         echo "Votre ".$_nom.": <input type=\"text\" id=$_nom name=\"user_\".$_nom><br>";
         echo "\n";
-        echo "</div>";
+        echo "</div><br>";
 
     }
     public function ajouterbouton()
     {
         echo "<div>";
         echo "<input type=\"submit\" name=\"valider\" value=\"Valider\"/><br>";
-        echo "</div>";
+        echo "</div><br>";
 
     }
     public function getform()
     {
         echo "<div>";
-        echo "code HTML : <br>";
+        echo "function getform() : <br><br>";
         $page = file_get_contents("Formulaire_Exercice_2.php");
-        print_r($page);
+        echo $page;
         echo "</div>";
     }
-
 }
 
 ?>

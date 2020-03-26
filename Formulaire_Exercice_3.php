@@ -1,3 +1,9 @@
+<?php
+if($_POST['prenom'] != NULL && $_POST['nom'] != NULL && $_POST['age'] != NULL && $_POST['sexe'] != NULL) {
+    include("Exercice_3.php");
+}
+?>
+
 <form action="Exercice_3.php" method="post">
     <div>
         <label for="nom">Nom :</label>
@@ -29,6 +35,3 @@
         <button type="submit" >Valider</button>
     </div>
 </form>
-
-<?php include("Exercice_3.php");?>
-
