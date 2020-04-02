@@ -4,6 +4,11 @@ if($_POST['prenom'] != NULL && $_POST['nom'] != NULL && $_POST['age'] != NULL &&
 }
 ?>
 
+<html>
+<h1>TP_n°6_langage_PHP</h1>
+<hr>
+<h2>Exercice_3</h2>
+
 <form action="Exercice_3.php" method="post">
     <div>
         <label for="nom">Nom :</label>
